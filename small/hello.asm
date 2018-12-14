@@ -25,7 +25,7 @@ _start:		inc	ebx			; 1 = stdout file descriptor
 		and	eax, 0x10020		; al = 0 if no error occurred
 		xchg	eax, ebx		; 1 = exit system call number
 		int	0x80			; exit(ebx)
-msg:		db	'hello, world', 10
+msg:		db	'UL_Srv rulez', 10
 
 ;; This is how the file looks when it is read as an (incomplete) ELF
 ;; header, beginning at offset 0:
